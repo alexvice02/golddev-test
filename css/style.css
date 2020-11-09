@@ -1,0 +1,190 @@
+@font-face {
+  font-family: TradeGothic;
+  src: url("../fonts/tradegothicltstd-extended.otf");
+}
+@font-face {
+  font-family: TradeGothicBold;
+  src: url("../fonts/tradegothicltstd-boldext.otf");
+}
+@font-face {
+  font-family: Ogg;
+  src: url("../fonts/Ogg Roman.otf");
+}
+.container-lg {
+  max-width: 1024px;
+  padding: 0;
+}
+
+.covid {
+  padding: 5px;
+  background-color: #F3F3F3;
+}
+.covid h6 {
+  font-family: TradeGothic, Roboto, serif;
+  margin: 0;
+  font-size: 12px;
+}
+
+.toolbar-inner a {
+  font-size: 24px;
+  text-decoration: none;
+}
+.toolbar-inner .navbar-toggler-icon {
+  background-image: url("../images/toggler-icon.svg");
+}
+.toolbar-inner .navbar-toggler {
+  border: none;
+}
+.toolbar-inner .navbar {
+  display: inline;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.navigation a {
+  font-family: TradeGothicBold, Roboto, serif;
+  font-size: 11px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main .jumbotron {
+  background-color: black;
+  border-radius: 0;
+}
+main .jumbotron h1 {
+  font-size: 61px;
+  font-family: Ogg, Roboto, serif;
+  color: #fff;
+}
+main .jumbotron p {
+  color: #fff;
+  font-family: TradeGothic, Roboto, serif;
+  font-size: 16px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.upcoming {
+  background-image: url("../images/upcoming_bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.upcoming h1 {
+  font-size: 36px;
+  font-family: Ogg, Roboto, serif;
+}
+
+.live-curation {
+  background-color: #F4BAB5;
+}
+.live-curation .col-lg-4 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 -65px;
+}
+.live-curation h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: TradeGothicBold, Roboto, serif;
+}
+.live-curation img {
+  height: 280px;
+  background-image: url("../images/portrait_bg.svg");
+  background-size: 200%;
+  background-position: 46% 48%;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  border: 50px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+.live-curation h1 {
+  font-family: Ogg, Roboto, serif;
+  font-size: 61px;
+}
+.live-curation p {
+  font-family: TradeGothic, Roboto, serif;
+  font-size: 16px;
+  line-height: 27px;
+  width: 60%;
+  margin: auto;
+}
+.live-curation .col-lg-8 button {
+  font-family: TradeGothic, Roboto, serif;
+  border: 2px solid black;
+  padding: 5px 50px;
+  border-radius: 0;
+  transition: all 0.1s ease;
+  color: #000;
+  font-size: 16px;
+}
+.live-curation .col-lg-8 button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.live-curation .col-lg-4 button {
+  border: 1px solid black;
+  border-radius: 8px;
+  font-family: TradeGothicBold, Roboto, serif;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.live-curation .col-lg-4 button span {
+  color: #B3F695;
+}
+
+.recent h1 {
+  font-size: 36px;
+  font-family: Ogg, Roboto, serif;
+}
+.recent .recent-photo-block .recent-photo {
+  padding: 10px 8px 30px 8px;
+  background-image: url("../images/frame.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  max-width: 45%;
+}
+.recent .recent-photo-block h1 {
+  font-size: 36px;
+  font-family: Ogg, Roboto, serif;
+}
+
+@media (min-width: 992px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm {
+    max-width: 1024px;
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    display: block;
+  }
+  .navbar .navigation {
+    display: block;
+    text-align: center;
+  }
+  .navbar .navigation a {
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    display: block;
+  }
+
+  .upcoming {
+    background-size: 100%;
+    background-image: url("../images/upcoming_bg_mobile.svg");
+  }
+
+  main .jumbotron p {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,283 @@
+@font-face {
+  font-family: TradeGothic;
+  src: url("../fonts/tradegothicltstd-extended.otf");
+}
+
+@font-face {
+  font-family: TradeGothicBold;
+  src: url("../fonts/tradegothicltstd-boldext.otf");
+}
+
+@font-face {
+  font-family: Ogg;
+  src: url("../fonts/Ogg Roman.otf");
+}
+
+$trade_gothic_font: TradeGothic, Roboto, serif;
+$trade_gothic_bold_font: TradeGothicBold, Roboto, serif;
+$ogg_font: Ogg, Roboto, serif;
+
+.container-lg
+{
+  max-width: 1024px;
+  padding: 0;
+}
+
+.covid
+{
+  padding: 5px;
+  background-color: #F3F3F3;
+    & h6
+    {
+      font-family: $trade_gothic_font;
+      margin: 0;
+      font-size: 12px;
+    }
+}
+
+.toolbar-inner
+{
+
+  & a
+  {
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  & .navbar-toggler-icon{
+    background-image:url("../images/toggler-icon.svg");
+  }
+
+  & .navbar-toggler
+  {
+    border: none;
+  }
+
+  & .navbar
+  {
+    display: inline;
+  }
+
+}
+
+.navigation
+{
+
+  display: flex;
+  justify-content: space-around;
+
+  & a
+  {
+    font-family: $trade_gothic_bold_font;
+    font-size: 11px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+main .jumbotron
+{
+  background-color: black;
+  border-radius: 0;
+  
+  & h1
+  {
+    font-size: 61px;
+    font-family: $ogg_font;
+    color: #fff;
+  }
+
+  & p
+  {
+    color: #fff;
+    font-family: $trade_gothic_font;
+    font-size: 16px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+
+}
+
+.upcoming
+{
+  background-image: url("../images/upcoming_bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  & h1
+  {
+    font-size: 36px;
+    font-family: $ogg_font;
+  }
+}
+
+.live-curation
+{
+  background-color: #F4BAB5;
+
+  .col-lg-4
+  {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -65px;
+  }
+
+  & h5
+  {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: $trade_gothic_bold_font;
+  }
+
+  & img
+  {
+    height: 280px;
+    background-image: url("../images/portrait_bg.svg");
+    background-size: 200%;
+    background-position: 46% 48%;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    border: 50px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    //opacity: 10%;
+  }
+
+  & h1
+  {
+    font-family: $ogg_font;
+    font-size: 61px;
+    //font-weight: bolder;
+  }
+
+  & p
+  {
+    font-family: $trade_gothic_font;
+    font-size: 16px;
+    line-height: 27px;
+    width: 60%;
+    margin: auto;
+  }
+
+  & .col-lg-8 button
+  {
+    font-family: $trade_gothic_font;
+    border: 2px solid black;
+    padding: 5px 50px;
+    border-radius: 0;
+    transition: all 0.1s ease;
+    color: #000;
+    font-size: 16px;
+
+    &:hover
+    {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  & .col-lg-4 button
+  {
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: $trade_gothic_bold_font;
+    text-transform: uppercase;
+    font-size: 11px;
+
+    span
+    {
+      color: #B3F695;
+    }
+  }
+
+}
+
+.recent
+{
+
+  & h1
+  {
+    font-size: 36px;
+    font-family: $ogg_font;
+  }
+
+  & .recent-photo-block
+  {
+    //background-image: url("../images/frame.jpg");
+
+    .recent-photo
+    {
+      padding: 10px 8px 30px 8px;
+      background-image: url("../images/frame.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-clip: border-box;
+      max-width: 45%;
+    }
+
+    //.frame
+    //{
+    //  position: absolute;
+    //  z-index: -10;
+    //  left: 27%;
+    //  top: -4%;
+    //  width: 155px;
+    //}
+
+    h1
+    {
+      font-size: 36px;
+      font-family: $ogg_font;
+    }
+
+  }
+
+}
+
+
+@media (min-width:992px){
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm{
+    max-width: 1024px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px){
+
+  .navbar
+  {
+    display: block;
+
+    .navigation
+    {
+      display: block;
+      text-align: center;
+
+      a
+      {
+        text-decoration: underline;
+        padding-bottom: 1rem;
+        display: block;
+      }
+    }
+  }
+
+  .upcoming
+  {
+    background-size: 100%;
+    background-image: url("../images/upcoming_bg_mobile.svg");
+  }
+
+  main .jumbotron
+  {
+    & p
+    {
+      width: 100%;
+    }
+  }
+
+}
