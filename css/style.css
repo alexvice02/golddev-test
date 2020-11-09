@@ -10,6 +10,11 @@
   font-family: Ogg;
   src: url("../fonts/Ogg Roman.otf");
 }
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .container-lg {
   max-width: 1024px;
   padding: 0;
@@ -28,6 +33,10 @@
 .toolbar-inner a {
   font-size: 24px;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+.toolbar-inner a:hover {
+  filter: opacity(50%);
 }
 .toolbar-inner .navbar-toggler-icon {
   background-image: url("../images/toggler-icon.svg");
@@ -49,6 +58,10 @@
   color: black;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.navigation a:hover {
+  filter: opacity(50%);
 }
 
 main .jumbotron {
@@ -101,6 +114,8 @@ main .jumbotron p {
   background-repeat: no-repeat;
   border: 50px solid rgba(0, 0, 0, 0);
   border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 .live-curation h1 {
   font-family: Ogg, Roboto, serif;
@@ -113,28 +128,32 @@ main .jumbotron p {
   width: 60%;
   margin: auto;
 }
-.live-curation .col-lg-8 button {
+.live-curation .rsvp {
   font-family: TradeGothic, Roboto, serif;
   border: 2px solid black;
   padding: 5px 50px;
   border-radius: 0;
-  transition: all 0.1s ease;
   color: #000;
   font-size: 16px;
 }
-.live-curation .col-lg-8 button:hover {
+.live-curation .rsvp:hover {
   background-color: #000;
   color: #fff;
 }
-.live-curation .col-lg-4 button {
+.live-curation .live-recording {
   border: 1px solid black;
   border-radius: 8px;
   font-family: TradeGothicBold, Roboto, serif;
   text-transform: uppercase;
   font-size: 11px;
+  margin: auto;
 }
-.live-curation .col-lg-4 button span {
+.live-curation .live-recording span {
   color: #B3F695;
+}
+.live-curation .live-recording:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .recent h1 {
@@ -147,7 +166,7 @@ main .jumbotron p {
   background-size: 100%;
   background-repeat: no-repeat;
   background-clip: border-box;
-  max-width: 45%;
+  max-width: 150px;
 }
 .recent .recent-photo-block h1 {
   font-size: 36px;
@@ -184,6 +203,11 @@ main .jumbotron p {
 
   main .jumbotron p {
     width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .col-sm-6 {
+    max-width: 50%;
   }
 }
 
