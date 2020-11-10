@@ -160,6 +160,40 @@ main .jumbotron p {
   font-size: 36px;
   font-family: Ogg, Roboto, serif;
 }
+.recent .recent-photo-block {
+  padding-top: 40px;
+}
+.recent .recent-photo-block:nth-child(6n+1) {
+  background-image: url("../images/shapes/triangle.svg"), url("../images/bag_bg.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 20% 30%, 5% 5%;
+}
+.recent .recent-photo-block:nth-child(6n+2) {
+  background-image: url("../images/shapes/combined.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+.recent .recent-photo-block:nth-child(6n+3) {
+  background-image: url("../images/shapes/oval.svg"), url("../images/bulb.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 80% 10%, 90% 0;
+  background-blend-mode: multiply;
+}
+.recent .recent-photo-block:nth-child(6n+4) {
+  background-image: url("../images/shapes/pill.svg");
+  background-repeat: no-repeat;
+  background-position: 40% 20%;
+}
+.recent .recent-photo-block:nth-child(6n+5) {
+  background-image: url("../images/shapes/star.svg"), url("../images/magnifier.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 90% 80%, 0 0;
+}
+.recent .recent-photo-block:nth-child(6n+6) {
+  background-image: url("../images/shapes/polygon.svg");
+  background-repeat: no-repeat;
+  background-position: 70% 10%;
+}
 .recent .recent-photo-block .recent-photo {
   padding: 10px 8px 30px 8px;
   background-image: url("../images/frame.jpg");
@@ -171,6 +205,34 @@ main .jumbotron p {
 .recent .recent-photo-block h1 {
   font-size: 36px;
   font-family: Ogg, Roboto, serif;
+}
+
+footer {
+  background-color: #f3f3f3;
+  font-family: TradeGothicBold, Roboto, serif;
+}
+footer .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-basis: max-content;
+}
+footer h6 {
+  width: fit-content;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+footer a {
+  font-size: 11px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: black;
+  filter: opacity(50%);
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
@@ -203,11 +265,6 @@ main .jumbotron p {
 
   main .jumbotron p {
     width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .col-sm-6 {
-    max-width: 50%;
   }
 }
 

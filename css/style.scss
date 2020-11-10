@@ -17,7 +17,6 @@ $trade_gothic_font: TradeGothic, Roboto, serif;
 $trade_gothic_bold_font: TradeGothicBold, Roboto, serif;
 $ogg_font: Ogg, Roboto, serif;
 
-
 html
 {
   overflow-y: scroll;
@@ -232,6 +231,50 @@ main .jumbotron
 
   & .recent-photo-block
   {
+    padding-top: 40px;
+
+    &:nth-child(6n + 1)
+    {
+      background-image: url("../images/shapes/triangle.svg"), url("../images/bag_bg.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 20% 30%, 5% 5%;
+    }
+
+    &:nth-child(6n + 2)
+    {
+      background-image: url("../images/shapes/combined.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 40%;
+    }
+
+    &:nth-child(6n + 3)
+    {
+      background-image: url("../images/shapes/oval.svg"), url("../images/bulb.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 80% 10%, 90% 0;
+      background-blend-mode: multiply;
+    }
+
+    &:nth-child(6n + 4)
+    {
+      background-image: url("../images/shapes/pill.svg");
+      background-repeat: no-repeat;
+      background-position: 40% 20%;
+    }
+
+    &:nth-child(6n + 5)
+    {
+      background-image: url("../images/shapes/star.svg"), url("../images/magnifier.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 90% 80%, 0 0;
+    }
+
+    &:nth-child(6n + 6)
+    {
+      background-image: url("../images/shapes/polygon.svg");
+      background-repeat: no-repeat;
+      background-position: 70% 10%;
+    }
 
     .recent-photo
     {
@@ -250,9 +293,50 @@ main .jumbotron
     }
 
   }
-
 }
 
+footer
+{
+  background-color: #f3f3f3;
+  font-family: $trade_gothic_bold_font;
+
+  .footer-inner
+  {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-basis: max-content;
+
+    &:last-child
+    {
+
+    }
+  }
+
+  h6
+  {
+    width: fit-content;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  a
+  {
+    font-size: 11px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+
+    &:hover
+    {
+      color: black;
+      filter: opacity(50%);
+      text-decoration: none;
+    }
+  }
+
+}
 
 @media (min-width:992px){
   .container,
@@ -300,9 +384,9 @@ main .jumbotron
 
 }
 
-@media (max-width: 576px) {
-  .col-sm-6
-  {
-    max-width: 50%;
-  }
-}
+//@media (max-width: 576px) {
+//  .col-sm-6
+//  {
+//    max-width: 50%;
+//  }
+//}
