@@ -297,44 +297,6 @@ main .jumbotron
 
 footer
 {
-  background-color: #f3f3f3;
-  font-family: $trade_gothic_bold_font;
-
-  .footer-inner
-  {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-basis: max-content;
-
-    &:last-child
-    {
-
-    }
-  }
-
-  h6
-  {
-    width: fit-content;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
-  a
-  {
-    font-size: 11px;
-    color: black;
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s ease;
-
-    &:hover
-    {
-      color: black;
-      filter: opacity(50%);
-      text-decoration: none;
-    }
-  }
 
 }
 
@@ -380,6 +342,11 @@ footer
     {
       width: 100%;
     }
+  }
+
+  .footer-inner
+  {
+
   }
 
 }
