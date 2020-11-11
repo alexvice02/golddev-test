@@ -207,6 +207,62 @@ main .jumbotron p {
   font-family: Ogg, Roboto, serif;
 }
 
+footer div.social {
+  display: none;
+}
+footer .footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-inner hr {
+  display: none;
+}
+footer .footer-inner a {
+  display: block;
+}
+footer .footer-inner .footer-column {
+  flex-grow: 2;
+  order: 2;
+}
+footer .footer-inner .footer-column h6 {
+  text-transform: uppercase;
+  font-family: TradeGothicBold, Roboto, serif;
+  font-size: 14px;
+}
+footer .footer-inner .footer-column h6 span {
+  display: none;
+}
+footer .footer-inner .footer-column a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: TradeGothicBold, Roboto, serif;
+  font-size: 11px;
+}
+footer .footer-inner .footer-column a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+footer .footer-inner .input-block {
+  flex-grow: 3;
+  order: 3;
+}
+footer .footer-inner .input-block input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid black;
+  font-family: TradeGothic, Roboto, serif;
+  font-size: 12px;
+}
+footer .footer-inner .input-block h6 {
+  max-width: 25vw;
+}
+footer .footer-inner .input-block .input-group-append button {
+  padding-bottom: 0;
+  border-bottom: 2px solid black;
+  border-radius: 0;
+  font-size: 12px;
+}
+
 @media (min-width: 992px) {
   .container,
 .container-lg,
@@ -237,6 +293,58 @@ main .jumbotron p {
 
   main .jumbotron p {
     width: 100%;
+  }
+
+  footer div.social {
+    margin-top: 1rem;
+    display: block;
+  }
+  footer div.social img {
+    width: 1.5rem;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-inner hr.hr {
+    display: block;
+    border-top: 2px solid black;
+    margin: 0;
+  }
+  .footer-inner a {
+    display: block;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  .footer-inner .footer-column {
+    flex-grow: 1;
+    order: 2;
+  }
+  .footer-inner .footer-column h6 {
+    border-top: 2px solid black;
+    padding: 1rem 1rem;
+    margin: 0;
+  }
+  .footer-inner .footer-column h6 span.plus {
+    display: inline;
+    float: right;
+    color: green;
+  }
+  .footer-inner .footer-column h6 span.plus img {
+    height: 1rem;
+  }
+  .footer-inner .find-us {
+    display: none;
+  }
+  .footer-inner div.input-block {
+    order: 1;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+  }
+  .footer-inner div.input-block h6 {
+    max-width: 100% !important;
+    border: none;
   }
 }
 

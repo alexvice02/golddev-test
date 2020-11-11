@@ -161,9 +161,95 @@
 
     <footer class="mt-5 pt-5 pb-5">
         <div class="container-lg">
-            
+            <div class="footer-inner">
+                <div class="footer-column">
+                    <h6 data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">about showfields <span class="plus">
+                        <img src="images/plus.svg" alt="">
+                    </span></h6>
+                    <div id="collapse1" class="collapse show">
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                        <a href="">FAQ</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h6 data-toggle="collapse" href="#collapse2" role="button" aria-expanded="true" aria-controls="collapse2">visit us <span class="plus">
+                        <img src="images/plus.svg" alt="">
+                    </span></h6>
+                    <div id="collapse2" class="collapse show">
+                        <a href="">Locations</a>
+                        <a href="">Store Appointments</a>
+                        <a href="">Virtual Appointments</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h6 data-toggle="collapse" href="#collapse3" role="button" aria-expanded="true" aria-controls="collapse3">partner with us <span class="plus">
+                        <img src="images/plus.svg" alt="">
+                    </span></h6>
+                    <div id="collapse3" class="collapse show">
+                        <a href="">Artists</a>
+                        <a href="">Brand Partnership</a>
+                        <a href="">Careers</a>
+                    </div>
+                    <hr class="hr">
+                </div>
+                <div class="footer-column find-us">
+                    <h6>find us</h6>
+                    <div>
+                        <a href="">Instagram</a>
+                        <a href="">Pinterest</a>
+                        <a href="">Facebook</a>
+                        <a href="">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-column input-block">
+                    <h6>STAY IN THE KNOW! SUBSCRIBE
+                        TO OUR NEWSLETTER. PLUS, RECEIVE 10% OFF YOUR FIRST ORDER.
+                    </h6>
+                    <div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter your email to subscribe">
+                            <div class="input-group-append">
+                                <button class="btn" type="button">&#8594;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social text-center">
+            <a href="#">
+                <img src="images/facebook.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="images/instagram.svg" alt="">
+            </a>
         </div>
     </footer>
+
+    <script>
+        $(window).resize(function()
+        {
+            if ($(window).width() < 992)
+            {
+                $(".collapse").removeClass("show")
+                return
+            }
+            $(".collapse").addClass("show")
+        })
+        $(window).ready(function()
+        {
+            if ($(window).width() < 992)
+            {
+                $(".collapse").removeClass("show")
+                return
+            }
+            $(".collapse").addClass("show")
+        })
+
+
+    </script>
 
 </body>
 </html>

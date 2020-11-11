@@ -298,6 +298,94 @@ main .jumbotron
 footer
 {
 
+  div.social
+  {
+    display: none;
+  }
+
+
+  .footer-inner
+  {
+    display: flex;
+    justify-content: space-between;
+
+    hr
+    {
+      display: none;
+    }
+
+    a
+    {
+      display: block;
+    }
+
+    .footer-column
+    {
+      flex-grow: 2;
+      order: 2;
+
+      h6
+      {
+        text-transform: uppercase;
+        font-family: $trade_gothic_bold_font;
+        font-size: 14px;
+
+        span
+        {
+          display: none;
+        }
+      }
+
+      a
+      {
+        color: black;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-family: $trade_gothic_bold_font;
+        font-size: 11px;
+
+        &:hover
+        {
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+
+    }
+
+    .input-block
+    {
+      flex-grow: 3;
+      order: 3;
+
+      input
+      {
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid black;
+        font-family: $trade_gothic_font;
+        font-size: 12px;
+      }
+
+      h6
+      {
+        max-width: 25vw;
+      }
+
+      .input-group-append
+      {
+
+        button
+        {
+          padding-bottom: 0;
+          border-bottom: 2px solid black;
+          border-radius: 0;
+          font-size: 12px;
+        }
+      }
+
+    }
+
+  }
 }
 
 @media (min-width:992px){
@@ -344,8 +432,103 @@ footer
     }
   }
 
+  footer
+  {
+    div.social
+    {
+      margin-top: 1rem;
+      display: block;
+
+      img
+      {
+        width: 1.5rem;
+      }
+
+    }
+  }
+
   .footer-inner
   {
+    display: flex;
+    flex-direction: column;
+
+    hr.hr
+    {
+      display: block;
+      border-top: 2px solid black;
+      margin: 0;
+    }
+
+    a
+    {
+      display: block;
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+    }
+
+    .footer-column
+    {
+      flex-grow: 1;
+      order: 2;
+
+      h6
+      {
+        border-top: 2px solid black;
+        padding: 1rem 1rem;
+        margin: 0;
+
+        span.plus
+        {
+          display: inline;
+          float: right;
+          color: green;
+
+          img
+          {
+            height: 1rem;
+          }
+        }
+      }
+
+      a
+      {
+
+      }
+
+    }
+
+    .find-us
+    {
+      display: none;
+    }
+
+    div.input-block
+    {
+      order: 1;
+      width: 80%;
+      margin: 0 auto 2rem auto;
+
+      input
+      {
+
+      }
+
+      h6
+      {
+        max-width: 100% !important;
+        border: none;
+      }
+
+      .input-group-append
+      {
+
+        button
+        {
+
+        }
+      }
+
+    }
 
   }
 
